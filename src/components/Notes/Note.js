@@ -5,8 +5,8 @@ const Note = (props) => {
   const { toggleModal, note, setSelectedNote } = props;
 
   // Destructuring from useState // Declaring state values
-  const [title, setTitle] = useState(note.title);
-  const [text, setText] = useState(note.text);
+  const [title] = useState(note.title);
+  const [text] = useState(note.text);
   const [isHover, setIsHover] = useState(false);
 
   // Event Handlers
